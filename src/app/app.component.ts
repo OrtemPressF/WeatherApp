@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WeatherApp';
+  public tabHeaderText: Object[] = [
+    {text : 'Weather'},
+    {text : 'Graph'},
+    {text : 'Heat-index'}
+  ]
+  public tabContent: string[]=[
+    "Weather",
+    "Index",
+    "Calc"
+  ]
 }
