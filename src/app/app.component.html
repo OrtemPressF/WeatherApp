@@ -1,15 +1,20 @@
 <div class="upper-data-all">
 <mat-tab-group style="background-color:grey;" animationDuration="500ms">
 
-
-  <mat-tab label="Weather">
+  <mat-tab label="Weather" *ngIf="weatherData">
     <div class="container">
       <div class="upper-data">
         <img src="../assets/image-asset.jpeg">
         <div class="weather-data">
-          <div class="date">08.22</div> <br>
+          <script>
+            document.getElementById("date").innerHTML = Date();
+            </script>
+          <div id="date"></div>            
           <div class="location">LONDON</div> <br><br>
-          <div class="temperature">{{12}}*C</div> <br>
+             <script>  </script>
+          
+          <div class="temperature">{{weatherData.hourly.temperature_2m[0]}}*C</div> <br>
+
         </div>
       </div>
      </div>
@@ -28,8 +33,6 @@
     </div>
 
   </mat-tab>
-
-
 
 
   <mat-tab label="Graph">    
@@ -56,3 +59,10 @@
 <!-- <p>wtf</p>
 <img src="/src/assets/image-asset.jpeg"> -->
 </div>
+
+<p>Time is </p>
+<script>
+document.getElementById("current_date").innerHTML = Date();
+</script>
+<p id="current_date"></p>
+
