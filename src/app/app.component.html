@@ -1,20 +1,47 @@
-<div>
-  <ejs-tab>
-    <e-tabitems cssClass="tab_content">
-      <e-tabitem [header]="tabHeaderText[0]" [content]="tabContent[0]">
-      <div class="container">
-        <div class="upper-data">
-          <img src="src\assets\London-PNG-File.png" alt="">
+<div class="upper-data-all">
+<mat-tab-group style="background-color:grey;" animationDuration="500ms">
 
+
+  <mat-tab label="Weather">
+    <div class="container">
+      <div class="upper-data">
+        <img src="../assets/image-asset.jpeg">
+        <div class="weather-data">
+          <div class="date">08.22</div> <br>
+          <div class="location">LONDON</div> <br><br>
+          <div class="temperature">{{12}}C</div> <br>
         </div>
       </div>
-      </e-tabitem>
-      <e-tabitem [header]="tabHeaderText[1]" [content]="tabContent[1]">
+     </div>
+     <div class="medium-data">
+        
+    </div>
+  </mat-tab>
 
-      </e-tabitem>
-      <e-tabitem [header]="tabHeaderText[2]" [content]="tabContent[2]">
 
-      </e-tabitem>
-    </e-tabitems>
-  </ejs-tab>
+
+
+  <mat-tab label="Graph">    
+    <div class="container">
+    <div class="upper-data">
+      <p>some text2</p>
+      <img src="../assets/istockphoto-1265900812-612x612.jpg">
+    </div>
+  </div>
+
+
+
+
+</mat-tab>
+  <mat-tab label="Heat-index">
+    <div class="container">
+      <div class="upper-data">
+        <p>some text3</p>
+        <img src="../assets/istockphoto-1265900812-612x612.jpg">
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+<!-- <p>wtf</p>
+<img src="/src/assets/image-asset.jpeg"> -->
 </div>
