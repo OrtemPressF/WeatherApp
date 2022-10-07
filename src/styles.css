@@ -67,10 +67,30 @@ justify-content: center;
     text-align: center;
 }
 .temperature{
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
     font-weight: 900;
 }
+.medium-data{
+    padding: 1% 0% 0% 15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.lower-data{
+    padding: 0% 0% 0% 10%;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    overflow: hidden;
+    color: white;
+
+}
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
